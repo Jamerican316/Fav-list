@@ -1,0 +1,70 @@
+#logo{
+	color: #6EB7FF;
+}
+
+#favlist {
+	margin-left: .5em;
+	color: gray;
+}
+
+input[type=text]
+{
+    background-color: #E6DFDF;
+    border:solid 1px #BFBDBD;
+    color: #1e1e1e;
+    height: 28px;
+    padding-left:10px;
+    width: 191px;
+}
+
+ input[type=text]
+{
+    border: 0;
+    border-radius:5px;
+    font-family: Sansation,Arial;
+}
+
+
+ul {
+	list-style-type: none;
+
+}
+
+ul > li {
+	display: inline;
+}
+
+form {
+	 position: absolute;
+    left: 50%;
+    right: 50%;
+}
+
+.titles, .list {
+	margin-left: 2.5em;
+	padding-top: 2em;
+}
+
+.items, .item {
+	width: 15em;
+}
+
+.Qty, .item_Qty {
+	width: 5em;
+}
+
+
+.items, .Qty, .item, .item_Qty, .info {
+	display: inline-block;
+}
+
+.info {
+	color: #6EB7FF;
+	border-radius: 100%;
+	font-size: .8em;
+    border: solid 1px;
+    padding: .2em .6em;
+    background-color: white;
+    margin: .3em 0em;
+
+}

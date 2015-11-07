@@ -1,9 +1,11 @@
 $(document).ready(function() {
-	$("#list_items").on("keyup change", function(){
-		var value = $("value").val();
-		$(".list > div").append('<div class="item">' + value 
-			+ '</div>');
-	});
-});
+    $("form").on("submit", function(evt) {
+        var list_items = $("#list_items");
+        var value = list_items.val();
+        $("#list").append("<div class='item'>" + value + "</div>");
 
+        list_items.val("");
 
+        evt.preventDefault();
+    });
+}):

@@ -49,12 +49,19 @@ form {
 	width: 15em;
 }
 
-.Qty, .item_Qty {
+.Qty, .tally {
 	width: 5em;
 }
 
+div >.count{
+	background-color: #E6DFDF;
+    width: 35px;
+    font: bold 20px Helvetica, sans-serif;
+    padding: 3px 0 0 0;
+    text-align: center;
+}
 
-.items, .Qty, .item, .item_Qty, .info {
+.items, .Qty, .item, .tally, .info {
 	display: inline-block;
 }
 
@@ -65,6 +72,23 @@ form {
     border: solid 1px;
     padding: .2em .6em;
     background-color: white;
-    margin: .3em 0em;
+    margin: 0em 0em 1em 0em;
 
 }
+
+/*var item = document.createTextNode("input");     
+	$(".item").append(item);
+
+	$( "input" ).keyup(function() {
+    var value = $( this ).val();
+	})
+
+	<div class='item'></div>
+			<div class="tally">
+        		<input type="text" class="count" name="" placeholder="1"/>
+    		</div>
+			<div class="info"><i class="fa fa-info"></i></div>
+			</div>
+  var $.item = $("<div class='item'></div>")
+	var $.item = $("<div class="tally"><input type="text" class="count" name="" placeholder="1"/></div>")
+	var $.item = $("<div class="info"><i class="fa fa-info"></i></div>")

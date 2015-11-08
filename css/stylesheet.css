@@ -7,8 +7,7 @@
 	color: gray;
 }
 
-input[type=text]
-{
+input[type=text] {
     background-color: #E6DFDF;
     border:solid 1px #BFBDBD;
     color: #1e1e1e;
@@ -17,13 +16,24 @@ input[type=text]
     width: 191px;
 }
 
- input[type=text]
-{
+ input[type=text] {
     border: 0;
     border-radius:5px;
     font-family: Sansation,Arial;
 }
 
+input[type=submit] {
+	position: absolute;
+    left: 13em;
+    top: -.01em;
+    height: 30px;
+    background-color: #7EB7FF;
+    color: gray;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding-bottom: 1px;
+}
 
 ul {
 	list-style-type: none;
@@ -45,23 +55,28 @@ form {
 	padding-top: 2em;
 }
 
-.items, .item {
+#items_column, .item {
 	width: 15em;
 }
 
-.Qty, .tally {
-	width: 5em;
+.item {
+	position: relative;
+	left: 2em;
 }
 
+#Qty_column, .tally {
+	width: 5em;
+}
+/*for counter
 div >.count{
 	background-color: #E6DFDF;
     width: 35px;
     font: bold 20px Helvetica, sans-serif;
     padding: 3px 0 0 0;
     text-align: center;
-}
+}*/
 
-.items, .Qty, .item, .tally, .info {
+#items_column, #Qty_column, .item, .tally, .info {
 	display: inline-block;
 }
 
@@ -74,4 +89,3 @@ div >.count{
     background-color: white;
     margin: 0em 0em 1em 0em;
 }
->>>>>>> cac6630d09a67aeda1e1cc075ebb2d8c5b66711b

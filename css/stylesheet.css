@@ -61,14 +61,26 @@ form {
 
 .item {
 	position: relative;
-	left: 2em;
+	left: 2.6em; 
 }
 
+p {
+    margin:0em;
+}
+.strike {
+    text-decoration: line-through;
+}
+/*Will think about adding item qty later - don't find it necessary
 #Qty_column, .tally {
 	width: 5em;
 }
-/*for counter
-div >.count{
+
+.tally {
+    position: relative;
+    left: 13em;
+}
+
+/*#item_Qty {
 	background-color: #E6DFDF;
     width: 35px;
     font: bold 20px Helvetica, sans-serif;
@@ -76,12 +88,14 @@ div >.count{
     text-align: center;
 }*/
 
-#items_column, #Qty_column, .item, .tally, .info {
+#items_column, /*#Qty_column,*/ /*.tally,*/ #list_item_edit_delete {
 	display: inline-block;
 }
 
-.info {
-	color: #6EB7FF;
+#list_item_edit_delete  {
+	position: relative;
+    left:20em;
+    color: #6EB7FF;
 	border-radius: 100%;
 	font-size: .8em;
     border: solid 1px;

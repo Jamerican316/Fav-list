@@ -72,7 +72,8 @@ p {
     background-color: #E6DFDF;
 }
 .strike {
-    text-decoration: line-through red;
+    text-decoration: line-through;
+    color:red;
 }
 /*Will think about adding item qty later - don't find it necessary
 #Qty_column, .tally {

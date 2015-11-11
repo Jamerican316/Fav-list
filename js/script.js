@@ -17,10 +17,9 @@ $(document).ready(function() {
         list_items.val("");
 //prevents the normal action that happens when inputs are submitted
         evt.preventDefault();
-
-//this function strikes through items on list
     })
-    $('body').on('click', 'p', function(){
+    //this function strikes through items on list
+    $('body').on('click','p',function(){
         $(this).closest('p').toggleClass('strike');
     });
 });

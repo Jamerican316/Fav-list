@@ -1,10 +1,10 @@
 #logo{
-	color: #6EB7FF;
+    color: #6EB7FF;
 }
 
 #favlist {
-	margin-left: .5em;
-	color: gray;
+    margin-left: .5em;
+    color: gray;
 }
 
 input[type=text] {
@@ -23,7 +23,7 @@ input[type=text] {
 }
 
 input[type=submit] {
-	position: absolute;
+    position: absolute;
     left: 13em;
     top: -.01em;
     height: 30px;
@@ -36,52 +36,54 @@ input[type=submit] {
 }
 
 ul {
-	list-style-type: none;
+    list-style-type: none;
 
 }
 
 ul > li {
-	display: inline;
+    display: inline;
 }
 
 form {
-	 position: absolute;
+     position: absolute;
     left: 50%;
     right: 50%;
 }
 
 .titles, .list {
-	margin-left: 2.5em;
-	padding-top: 2em;
+    margin-left: 2.5em;
+    padding-top: 2em;
 }
 
 #items_column, .item {
-	width: 15em;
+    width: 15em;
 }
 
 .item {
-	position: relative;
-	left: 2.6em; 
+    position: relative;
+    left: 2.6em; 
 }
 
 p {
     margin:0em;
+    border: solid 1px gray;
+    border-radius: 5px;
+    text-indent: .5em;
+    background-color: #E6DFDF;
 }
 .strike {
     text-decoration: line-through;
 }
 /*Will think about adding item qty later - don't find it necessary
 #Qty_column, .tally {
-	width: 5em;
+    width: 5em;
 }
-
 .tally {
     position: relative;
     left: 13em;
 }
-
 /*#item_Qty {
-	background-color: #E6DFDF;
+    background-color: #E6DFDF;
     width: 35px;
     font: bold 20px Helvetica, sans-serif;
     padding: 3px 0 0 0;
@@ -89,17 +91,17 @@ p {
 }*/
 
 #items_column, /*#Qty_column,*/ /*.tally,*/ #list_item_edit_delete {
-	display: inline-block;
+    display: inline-block;
 }
 
 #list_item_edit_delete  {
-	position: relative;
+    position: relative;
     left:20em;
+    top: -1.5em;
     color: #6EB7FF;
-	border-radius: 100%;
-	font-size: .8em;
+    border-radius: 100%;
+    font-size: .8em;
     border: solid 1px;
-    padding: .2em .6em;
+    padding: .2em .4em;
     background-color: white;
-    margin: 0em 0em 1em 0em;
 }

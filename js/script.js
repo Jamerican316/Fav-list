@@ -6,8 +6,18 @@ $(document).ready(function() {
         var value = list_items.val();
         var div = $('<div>').addClass('item')
         var p = $('<p>').text(value);
-        var div2 = $('<div>').attr('id', 'list_item_edit_delete');
+        var div2 = $('<div>').addClass('list_item_edit_delete');
         var icon = $('<span>').addClass('fa fa-info');
+//this function strikes through items on list
+        p.click(function(){
+            $(this).toggleClass('strike')
+        })
+//this function deletes/removes parent p tag when sibling div is clicked
+        div2.click(function(){
+            p.parent().remove()
+        })
+
+
 //how elements get added to the page
         $(div2).append(icon);
         $(div).append(div2)
@@ -18,13 +28,10 @@ $(document).ready(function() {
 //prevents the normal action that happens when inputs are submitted
         evt.preventDefault();
     })
-    //this function strikes through items on list
-    $('body').on('click','p',function(){
-        $(this).closest('p').toggleClass('strike');
-    });
 });
 
 
 //leaving code in case I decide to add item qty later
         //var div2 = $('<div>').addClass('tally');
-        //var itemQnty = $('<input type="text" name="" id="item_Qty" placeholder="1"/>');
+        //var itemQnty = $('<input type="text" name="" id="item_Qty" placeholder="1"/>');list.on('click','.delete',function(){
+    

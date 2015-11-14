@@ -91,11 +91,11 @@ p {
     text-align: center;
 }*/
 
-#items_column, /*#Qty_column,*/ /*.tally,*/ #list_item_edit_delete {
+#items_column, /*#Qty_column,*/ /*.tally,*/ .list_item_edit_delete {
     display: inline-block;
 }
 
-#list_item_edit_delete  {
+.list_item_edit_delete  {
     position: relative;
     left:20em;
     top: -1.5em;
